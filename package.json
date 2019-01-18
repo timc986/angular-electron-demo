@@ -11,6 +11,7 @@
     "e2e": "ng e2e",
     "electron": "electron .",
     "electron-build": "ng build --prod && electron .",
+    "electron:win": "ng build --prod && electron-builder build --windows",
     "electron:win2-32": "ng build --prod && electron-packager . --overwrite --platform=win32 --arch=ia32 --out=out --ignore=\\.gitignore --ignore=\\angular.json",
     "electron:win2-64": "ng build --prod && electron-packager . --overwrite --platform=win32 --arch=x64 --out=out --ignore=\\.gitignore --ignore=\\angular.json"
   },
@@ -40,6 +41,7 @@
     "@types/node": "~8.9.4",
     "codelyzer": "~4.5.0",
     "electron": "^4.0.1",
+    "electron-builder": "^20.38.5",
     "jasmine-core": "~2.99.1",
     "jasmine-spec-reporter": "~4.2.1",
     "karma": "~3.1.1",
